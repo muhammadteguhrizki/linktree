@@ -53,7 +53,7 @@
     <section id="random" class="pt-5 pb-5">
       <div class="flex items-center justify-center">
         <div class="w-80 mb-6">
-          <input type="search" class="w-full py-2 px-5 rounded outline-none focus:ring-1 focus:ring-sky-500 placeholder:text-sky-500" id="cari" name="cari" placeholder="Mau cari apa?" />
+          <input type="search" class="w-full py-2 px-5 rounded outline-none focus:ring-1 focus:ring-sky-500 placeholder:text-sky-500" id="cari" name="cari" onkeyup="search()" placeholder="Mau cari apa?" />
         </div>
       </div>
 
@@ -63,7 +63,7 @@
           <h2 class="text-slate-100 font-bold text-2xl uppercase py-3 tracking-widest">Recent Projects</h2>
 
           <!-- Card -->
-          <div class="relative bg-slate-500 my-1 px-2 py-3 leading-relaxed">
+          <div id="card" class="relative bg-slate-500 my-1 px-2 py-3 leading-relaxed">
             <h3 class="font-semibold font-mono text-xl text-slate-100">Coffe Shop</h3>
             <button type="button" onclick="window.alert('Copy link ini: https://muhammadteguhrizki.github.io/coffe-shop/')" class="float-right top-0 right-0 absolute text-2xl text-FirstColor">
               <ion-icon name="share-social-outline"></ion-icon>
@@ -81,7 +81,7 @@
           <!-- Card -->
 
           <!-- Card -->
-          <div class="relative bg-slate-500 my-1 px-2 py-3 leading-relaxed">
+          <div id="card" class="relative bg-slate-500 my-1 px-2 py-3 leading-relaxed">
             <h3 class="font-semibold font-mono text-xl text-slate-100">Portfolio Landing Page</h3>
             <button type="button" onclick="window.alert('Copy link ini: http://teguhpedia.site/')" class="float-right top-0 right-0 absolute text-2xl text-FirstColor">
               <ion-icon name="share-social-outline"></ion-icon>
@@ -104,7 +104,7 @@
           <h2 class="text-slate-100 font-bold text-2xl uppercase py-3 tracking-widest">Products</h2>
 
           <!-- Card -->
-          <div class="relative border border-slate-500 my-1 px-2 py-3 leading-relaxed">
+          <div id="card" class="relative border border-slate-500 my-1 px-2 py-3 leading-relaxed">
             <img src="src/assets/product/itemku_googleplay.png" class="mt-2 mb-2" alt="#" />
             <a
               href="https://itemku.com/dagangan/voucher-google-play-idr-20000-teguh-storee/1737069?from=shop_page"
@@ -134,7 +134,7 @@
           <h2 class="text-slate-100 font-bold text-2xl uppercase py-3 tracking-widest">Resource</h2>
 
           <!-- Card -->
-          <div class="relative border border-slate-500 my-1 px-2 py-3 leading-relaxed">
+          <div id="card" class="relative border border-slate-500 my-1 px-2 py-3 leading-relaxed">
             <img src="src/assets/resource/mobile_legend.jpg" class="mt-2 mb-2" alt="#" />
             <button
               type="button"
@@ -155,6 +155,7 @@
               <ion-icon name="share-social-outline"></ion-icon>
             </button>
           </div>
+          `
           <!-- Card -->
         </div>
       </div>
@@ -164,12 +165,14 @@
 
     <!-- To--top--scroll -->
     <div id="to-top" class="hidden justify-center items-center">
-      <a href="#top" class="flex w-20 items-center justify-center bg-slate-200 py-2 px-3 rounded-sm fixed bottom-0 transition duration-300 ease-in-out hover:bg-slate-400"><ion-icon name="caret-up"></ion-icon></a>
+      <a href="#top" class="flex w-20 items-center justify-center bg-slate-200 py-2 px-3 rounded-sm fixed bottom-0 hover:bg-slate-400"><ion-icon name="caret-up"></ion-icon></a>
     </div>
 
     <!-- Library Ionicons -->
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <!-- Javascript Scroll -->
     <script type="text/javascript" src="src/js/scroll.js"></script>
+    <!-- Javascript Search -->
+    <script type="text/javascript" src="src/js/search.js"></script>
   </body>
 </html>
