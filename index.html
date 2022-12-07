@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apa aja</title>
+    <title>Apa aja | Project Teguh</title>
     <link rel="stylesheet" href="dist/output.css" />
   </head>
   <body class="bg-gradient-to-br bg-auto bg-no-repeat from-slate-900 to-sky-800">
@@ -22,7 +22,7 @@
       </div>
       <div class="flex items-center justify-center mt-10">
         <div class="w-80 border border-slate-500 py-1">
-          <div class="flex justify-center items-center gap-3">
+          <div class="flex justify-evenly items-center">
             <!-- linkedin -->
             <a href="https://www.linkedin.com/in/muhammad-teguh-rizkiono-91362a24b/" target="_blank" class="flex items-center justify-center text-xl h-10 w-10 rounded-full bg-slate-50 hover:bg-slate-600 hover:text-slate-50">
               <ion-icon name="logo-linkedin" class="fill-current"></ion-icon>
@@ -63,35 +63,98 @@
           <h2 class="text-slate-100 font-bold text-2xl uppercase py-3 tracking-widest">My Projects</h2>
 
           <!-- Card -->
-          <div id="card" class="relative bg-slate-500 my-1 px-2 py-3 leading-relaxed">
+          <div id="card" class="relative bg-slate-500 my-1 px-2 py-3 mb-3 leading-relaxed">
             <h3 class="font-semibold font-mono text-xl text-slate-100">Coffe Shop</h3>
 
             <span class="flex flex-wrap gap-2 my-2">
               <p class="text-base px-2 rounded-full text-slate-100 bg-sky-600">Html</p>
               <p class="text-base px-2 rounded-full text-slate-100 bg-sky-600">Css</p>
               <p class="text-base px-2 rounded-full text-slate-100 bg-sky-600">Javascript</p>
-              <p class="text-base px-2 rounded-full text-slate-100 bg-sky-600">Bootstrap 5</p>
+              <p class="text-base px-2 rounded-full text-slate-100 bg-sky-600">Bootstrap</p>
             </span>
 
             <img src="src/assets/img_project/cofee_shop.png" class="mt-5" alt="#" />
 
-            <input type="text" class="w-full" id="copyText" value="https://muhammadteguhrizki.github.io/coffe-shop/" readonly />
-            <button>Copy</button>
+            <div class="flex items-center justify-center mt-2 gap-2">
+              <input
+                type="text"
+                class="w-full relative indent-2 rounded-lg bg-FirstColor text-slate-200 placeholder-slate-200 border border-yellow-300 focus:outline-none focus:ring-1 focus:ring-yellow-500 focus:border-yellow-500"
+                id="copyText1"
+                value="https://muhammadteguhrizki.github.io/coffe-shop/"
+                readonly
+              />
+              <button id="copyBtn1" class="flex text-FirstColor text-2xl hover:text-slate-200 focus:text-yellow-500"><ion-icon name="copy-outline"></ion-icon></button>
+            </div>
           </div>
           <!-- Card -->
 
           <!-- Card -->
-          <div id="card" class="relative bg-slate-500 my-1 px-2 py-3 leading-relaxed">
+          <div id="card" class="relative bg-slate-500 my-1 px-2 py-3 mb-3 leading-relaxed">
             <h3 class="font-semibold font-mono text-xl text-slate-100">Portfolio Landing Page</h3>
-            <button type="button" onclick="window.alert('Copy link ini: http://teguhpedia.site/')" class="float-right top-0 right-0 absolute text-2xl text-FirstColor">
-              <ion-icon name="share-social-outline"></ion-icon>
-            </button>
+
             <span class="flex flex-wrap gap-2 my-2">
               <p class="text-base px-2 rounded-full text-slate-100 bg-sky-600">Javascript</p>
-              <p class="text-base px-2 rounded-full text-slate-100 bg-sky-600">Bootstrap 5</p>
+              <p class="text-base px-2 rounded-full text-slate-100 bg-sky-600">Bootstrap</p>
               <p class="text-base px-2 rounded-full text-slate-100 bg-sky-600">PHP</p>
             </span>
             <img src="src/assets/img_project/teguhpedia.png" class="mt-5" alt="#" />
+
+            <div class="flex items-center justify-center mt-2 gap-2">
+              <input
+                type="text"
+                class="w-full relative indent-2 rounded-lg bg-FirstColor text-slate-200 placeholder-slate-200 border border-yellow-300 focus:outline-none focus:ring-1 focus:ring-yellow-500 focus:border-yellow-500"
+                id="copyText2"
+                value="http://teguhpedia.site/"
+                readonly
+              />
+              <button id="copyBtn2" class="flex text-FirstColor text-2xl hover:text-slate-200 focus:text-yellow-500"><ion-icon name="copy-outline"></ion-icon></button>
+            </div>
+          </div>
+          <!-- Card -->
+
+          <!-- Card -->
+          <div id="card" class="relative bg-slate-500 my-1 px-2 py-3 mb-3 leading-relaxed">
+            <h3 class="font-semibold font-mono text-xl text-slate-100">Dark and Light Mode</h3>
+
+            <span class="flex flex-wrap gap-2 my-2">
+              <p class="text-base px-2 rounded-full text-slate-100 bg-sky-600">Tailwindcss</p>
+              <p class="text-base px-2 rounded-full text-slate-100 bg-sky-600">Javascript</p>
+            </span>
+            <img src="src/assets/img_project/darkmode.png" class="mt-5" alt="#" />
+
+            <div class="flex items-center justify-center mt-2 gap-2">
+              <input
+                type="text"
+                class="w-full relative indent-2 rounded-lg bg-FirstColor text-slate-200 placeholder-slate-200 border border-yellow-300 focus:outline-none focus:ring-1 focus:ring-yellow-500 focus:border-yellow-500"
+                id="copyText3"
+                value="https://muhammadteguhrizki.github.io/teguh-rizki/"
+                readonly
+              />
+              <button id="copyBtn3" class="flex text-FirstColor text-2xl hover:text-slate-200 focus:text-yellow-500"><ion-icon name="copy-outline"></ion-icon></button>
+            </div>
+          </div>
+          <!-- Card -->
+
+          <!-- Card -->
+          <div id="card" class="relative bg-slate-500 my-1 px-2 py-3 mb-3 leading-relaxed">
+            <h3 class="font-semibold font-mono text-xl text-slate-100">Toko Ikan Hias</h3>
+
+            <span class="flex flex-wrap gap-2 my-2">
+              <p class="text-base px-2 rounded-full text-slate-100 bg-sky-600">Bootstrap</p>
+              <p class="text-base px-2 rounded-full text-slate-100 bg-sky-600">Javascript</p>
+            </span>
+            <img src="src/assets/img_project/mitra_aquatic.png" class="mt-5" alt="#" />
+
+            <div class="flex items-center justify-center mt-2 gap-2">
+              <input
+                type="text"
+                class="w-full relative indent-2 rounded-lg bg-FirstColor text-slate-200 placeholder-slate-200 border border-yellow-300 focus:outline-none focus:ring-1 focus:ring-yellow-500 focus:border-yellow-500"
+                id="copyText4"
+                value="https://muhammadteguhrizki.github.io/mitra_aquatic.com/"
+                readonly
+              />
+              <button id="copyBtn4" class="flex text-FirstColor text-2xl hover:text-slate-200 focus:text-yellow-500"><ion-icon name="copy-outline"></ion-icon></button>
+            </div>
           </div>
           <!-- Card -->
         </div>
@@ -118,10 +181,6 @@
               <p class="text-base px-2 rounded-full text-slate-100 bg-sky-600">Voucer</p>
               <p class="text-base px-2 rounded-full text-slate-100 bg-sky-600">Product</p>
             </span>
-
-            <button type="button" onclick="window.alert('Copy link ini: https://itemku.com/t/teguh-storee')" class="float-right bottom-0 right-0 absolute text-2xl text-slate-200">
-              <ion-icon name="share-social-outline"></ion-icon>
-            </button>
           </div>
           <!-- Card -->
         </div>
@@ -150,10 +209,6 @@
               <p class="text-base px-2 rounded-full text-slate-100 bg-sky-600">Game</p>
               <p class="text-base px-2 rounded-full text-slate-100 bg-sky-600">Activity</p>
             </span>
-
-            <button type="button" onclick="window.alert('Copy id ini: 177289022')" class="float-right bottom-0 right-0 absolute text-2xl text-slate-200">
-              <ion-icon name="share-social-outline"></ion-icon>
-            </button>
           </div>
           <!-- Card -->
         </div>
@@ -173,5 +228,7 @@
     <script type="text/javascript" src="src/js/scroll.js"></script>
     <!-- Javascript Search -->
     <script type="text/javascript" src="src/js/search.js"></script>
+    <!-- Javascript Copy Text -->
+    <script type="text/javascript" src="src/js/copy.js"></script>
   </body>
 </html>
